@@ -11,6 +11,12 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
     createWindow();
+
+    app.on('activate', () => {
+        if (BrowserWindow.getAllWindows().length === 0) {
+            createWindow();
+        }
+    })
 });
 
 // when all windows are closed, close the app if the user is not on macOS
