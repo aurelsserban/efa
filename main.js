@@ -12,3 +12,10 @@ const createWindow = () => {
 app.whenReady().then(() => {
     createWindow();
 });
+
+// when all windows are closed, close the app if the user is not on macOS
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') { 
+        app.quit()
+    }
+});
