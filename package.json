@@ -1,0 +1,22 @@
+{
+  "name": "efa",
+  "version": "1.0.0",
+  "description": "First electron app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurelsserban/efa.git"
+  },
+  "author": "Aurel Serban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aurelsserban/efa/issues"
+  },
+  "homepage": "https://github.com/aurelsserban/efa#readme",
+  "devDependencies": {
+    "electron": "^29.1.4"
+  }
+}
